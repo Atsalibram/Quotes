@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  goal = 'Walk alone walk fast walk with others walk far'
+  // title = 'Quotes';
 }
