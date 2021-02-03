@@ -1,24 +1,30 @@
 <div class="container-fluid">
   <div class="row card">
-      <hr>
-        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-          <div class="form-group">
-              <input type="text" required class="form-control quote-area" id="message" [(ngModel)]="newQuote.message" name="message" #message="ngModel" placeholder="QUOTE">
-                <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
-                </div>
-          </div>
-          <div class="form-group">
-              <input type="text" required class="form-control" placeholder="AUTHOR" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
-          <div [hidden]="author.valid || author.pristine" class="alert alert-sucess">
-          </div>
-              
-          </div>
-          <div class="form-group">
-            <input type="text" required class="form-control" placeholder="POSTED BY" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy="ngModel">
-            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">              
-          </div>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+      <div class="form-group">
+        <input type="text" required class="form-control quote-area" id="message" [(ngModel)]="newQuote.message"
+          name="message" #message="ngModel" placeholder="QUOTE">
+        <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
         </div>
-          <button type="submit reset" class="btn btn-success btn-lg">Add Quote</button>
-      </form>
+      </div>
+      <br><br>
+      <div class="form-group">
+        <input type="text" required class="form-control" placeholder="AUTHOR" id="author" [(ngModel)]="newQuote.author"
+          name="author" #author="ngModel">
+        <div [hidden]="author.valid || author.pristine" class="alert alert-sucess">
+        </div>
+
+      </div>
+      <br><br>
+      <div class="form-group">
+        <input type="text" required class="form-control" placeholder="POSTED BY" id="postedBy"
+          [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy="ngModel">
+        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+        </div>
+      </div>
+      <br><br>
+      <button type="submit reset" class="btn btn-success btn-lg">Add Quote</button>
+    </form>
   </div>
 </div>
